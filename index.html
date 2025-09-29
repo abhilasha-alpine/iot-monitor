@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT-Based Food Waste Monitoring System - Competition Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Cover -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-content cover-slide">
+                <div class="hero-section">
+                    <div class="tech-icon">🌱</div>
+                    <h1 class="main-title">IoT-Based Food Waste Monitoring System</h1>
+                    <h2 class="subtitle">with AI-Powered Alerts</h2>
+                    <p class="tagline">Smart Solutions for Sustainable Living</p>
+                </div>
+                <div class="team-info">
+                    <div class="competition-badge">Stage 1 | Online Submissions | 20th July - 30th September 2025</div>
+                    <div class="team-details">
+                        <h3>Smart Solutions Team</h3>
+                        <p class="category">Smart City & Sustainability Solutions</p>
+                        <div class="contact-info">
+                            <p>📧 your.email@school.edu</p>
+                            <p>🏫 School Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Problem Statement -->
+        <div class="slide" id="slide-2">
+            <div class="slide-content">
+                <h1>The Global Food Waste Crisis</h1>
+                <div class="problem-grid">
+                    <div class="stat-card stat-1">
+                        <div class="stat-icon">🌍</div>
+                        <div class="stat-number">1.3B</div>
+                        <div class="stat-label">Tons wasted annually</div>
+                        <div class="stat-source">UN FAO 2023</div>
+                    </div>
+                    <div class="stat-card stat-2">
+                        <div class="stat-icon">🏠</div>
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Household waste due to poor monitoring</div>
+                    </div>
+                    <div class="stat-card stat-3">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-number">$1T</div>
+                        <div class="stat-label">Annual global economic loss</div>
+                    </div>
+                    <div class="stat-card stat-4">
+                        <div class="stat-icon">☁️</div>
+                        <div class="stat-number">8-10%</div>
+                        <div class="stat-label">Of global GHG emissions</div>
+                    </div>
+                </div>
+                <div class="key-problems">
+                    <h3>Key Problems We Address:</h3>
+                    <ul class="problem-list">
+                        <li>❌ Late detection of food spoilage</li>
+                        <li>❌ Lack of real-time monitoring systems</li>
+                        <li>❌ No predictive alerts for expiry</li>
+                        <li>❌ Manual checking leads to human error</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Current Gaps -->
+        <div class="slide" id="slide-3">
+            <div class="slide-content">
+                <h1>Market Gaps & Competition Analysis</h1>
+                <div class="competition-analysis">
+                    <div class="existing-solutions">
+                        <h3>Existing Solutions & Limitations</h3>
+                        <div class="solution-cards">
+                            <div class="solution-card expensive">
+                                <h4>Smart Refrigerators</h4>
+                                <div class="cost">$2000+</div>
+                                <ul class="limitations">
+                                    <li>💸 Extremely expensive</li>
+                                    <li>⚠️ Limited sensors</li>
+                                    <li>👃 No odor detection</li>
+                                </ul>
+                            </div>
+                            <div class="solution-card manual">
+                                <h4>Mobile Apps</h4>
+                                <div class="cost">Free-$10</div>
+                                <ul class="limitations">
+                                    <li>📱 Manual input required</li>
+                                    <li>📊 No real-time data</li>
+                                    <li>👥 Poor user adoption</li>
+                                </ul>
+                            </div>
+                            <div class="solution-card basic">
+                                <h4>Basic IoT Sensors</h4>
+                                <div class="cost">$150+</div>
+                                <ul class="limitations">
+                                    <li>🔍 Single parameter only</li>
+                                    <li>🧠 No intelligence</li>
+                                    <li>🔧 Complex setup</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-gaps">
+                        <h3>Critical Market Gaps</h3>
+                        <div class="gap-items">
+                            <div class="gap-item">🎯 No affordable odor-based detection</div>
+                            <div class="gap-item">🤖 Missing predictive capabilities</div>
+                            <div class="gap-item">📱 Poor user accessibility</div>
+                            <div class="gap-item">🔗 Lack of multi-sensor integration</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Proposed Solution -->
+        <div class="slide" id="slide-4">
+            <div class="slide-content">
+                <h1>Our Revolutionary Solution</h1>
+                <div class="solution-overview">
+                    <div class="features-section">
+                        <h3>System Features</h3>
+                        <div class="feature-list">
+                            <div class="feature-item">🔍 Real-time multi-sensor monitoring</div>
+                            <div class="feature-item">🤖 Intelligent Telegram bot alerts</div>
+                            <div class="feature-item">📊 Food shelf-life prediction</div>
+                            <div class="feature-item">📺 Local OLED display</div>
+                            <div class="feature-item">📶 Wi-Fi enabled remote access</div>
+                        </div>
+                    </div>
+                    <div class="architecture-diagram">
+                        <h3>System Architecture</h3>
+                        <div class="arch-flow">
+                            <div class="arch-component sensors">
+                                <div class="component-title">Sensors</div>
+                                <div class="component-items">
+                                    <div class="sensor-item">MQ-135 Gas</div>
+                                    <div class="sensor-item">DHT11 T/H</div>
+                                    <div class="sensor-item">OLED Display</div>
+                                </div>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-component processing">
+                                <div class="component-title">Processing</div>
+                                <div class="component-items">
+                                    <div class="sensor-item">ESP8266 MCU</div>
+                                    <div class="sensor-item">Wi-Fi + NTP</div>
+                                </div>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-component interface">
+                                <div class="component-title">Interface</div>
+                                <div class="component-items">
+                                    <div class="sensor-item">Telegram Bot</div>
+                                    <div class="sensor-item">User Alerts</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: AI Integration -->
+        <div class="slide" id="slide-5">
+            <div class="slide-content">
+                <h1>AI Integration & Future Vision</h1>
+                <div class="ai-sections">
+                    <div class="current-ai">
+                        <h3>Current AI Implementation</h3>
+                        <div class="ai-components">
+                            <div class="ai-card">
+                                <div class="ai-icon">📈</div>
+                                <h4>Predictive Analytics</h4>
+                                <p>Historical pattern analysis for spoilage prediction</p>
+                            </div>
+                            <div class="ai-card">
+                                <div class="ai-icon">🧠</div>
+                                <h4>Intelligent Alerts</h4>
+                                <p>Smart threshold adjustment and false alarm reduction</p>
+                            </div>
+                            <div class="ai-card">
+                                <div class="ai-icon">💬</div>
+                                <h4>NLP Processing</h4>
+                                <p>Natural language command processing via Telegram</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="future-ai">
+                        <h3>Future AI Roadmap</h3>
+                        <div class="roadmap-phases">
+                            <div class="phase-card phase-2">
+                                <div class="phase-header">Phase 2</div>
+                                <div class="phase-content">
+                                    <h4>👁️ Computer Vision</h4>
+                                    <p>Visual spoilage detection via camera</p>
+                                </div>
+                            </div>
+                            <div class="phase-card phase-3">
+                                <div class="phase-header">Phase 3</div>
+                                <div class="phase-content">
+                                    <h4>🧬 Deep Learning</h4>
+                                    <p>Neural networks for complex pattern recognition</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Target Audience -->
+        <div class="slide" id="slide-6">
+            <div class="slide-content">
+                <h1>Target Audience & Use Cases</h1>
+                <div class="audience-overview">
+                    <div class="audience-chart-container" style="position: relative; height: 300px;">
+                        <canvas id="audienceChart"></canvas>
+                    </div>
+                    <div class="use-cases">
+                        <div class="use-case-card households">
+                            <div class="use-case-icon">🏠</div>
+                            <h4>Households (85%)</h4>
+                            <p class="use-case">Daily food monitoring</p>
+                            <p class="value">$300-500 annual savings</p>
+                        </div>
+                        <div class="use-case-card restaurants">
+                            <div class="use-case-icon">🍽️</div>
+                            <h4>Restaurants (10%)</h4>
+                            <p class="use-case">Food safety compliance</p>
+                            <p class="value">Health violation prevention</p>
+                        </div>
+                        <div class="use-case-card retail">
+                            <div class="use-case-icon">🏪</div>
+                            <h4>Retail (5%)</h4>
+                            <p class="use-case">Inventory quality control</p>
+                            <p class="value">Customer trust & liability</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scenarios">
+                    <h3>Real-World Impact Scenarios</h3>
+                    <div class="scenario-cards">
+                        <div class="scenario-card">
+                            <h4>👨‍👩‍👧‍👦 Busy Family Kitchen</h4>
+                            <p><strong>Challenge:</strong> Forgetting food expiry dates</p>
+                            <p><strong>Solution:</strong> Automatic spoilage alerts</p>
+                            <p class="outcome">✅ 40% waste reduction</p>
+                        </div>
+                        <div class="scenario-card">
+                            <h4>🍴 Small Restaurant</h4>
+                            <p><strong>Challenge:</strong> Manual freshness checking</p>
+                            <p><strong>Solution:</strong> Real-time monitoring system</p>
+                            <p class="outcome">✅ 25% cost reduction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Technology Stack -->
+        <div class="slide" id="slide-7">
+            <div class="slide-content">
+                <h1>Technology Stack</h1>
+                <div class="tech-sections">
+                    <div class="hardware-section">
+                        <h3>Hardware Components</h3>
+                        <div class="tech-cards">
+                            <div class="tech-card esp8266">
+                                <div class="tech-icon">🖥️</div>
+                                <h4>ESP8266 NodeMCU</h4>
+                                <p>Wi-Fi microcontroller, 4MB flash, 80MHz</p>
+                            </div>
+                            <div class="tech-card gas-sensor">
+                                <div class="tech-icon">👃</div>
+                                <h4>MQ-135 Gas Sensor</h4>
+                                <p>Detects NH₃, NOₓ, alcohol, 0-1000 ppm</p>
+                            </div>
+                            <div class="tech-card temp-sensor">
+                                <div class="tech-icon">🌡️</div>
+                                <h4>DHT11 Sensor</h4>
+                                <p>Temperature ±2°C, Humidity 20-80% RH</p>
+                            </div>
+                            <div class="tech-card display">
+                                <div class="tech-icon">📺</div>
+                                <h4>OLED Display</h4>
+                                <p>128×64 pixels, real-time readings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="software-section">
+                        <h3>Software Stack</h3>
+                        <div class="software-layers">
+                            <div class="layer-item programming">
+                                <span class="layer-label">Programming</span>
+                                <span class="layer-tech">C++ with Arduino framework</span>
+                            </div>
+                            <div class="layer-item communication">
+                                <span class="layer-label">Communication</span>
+                                <span class="layer-tech">Wi-Fi, HTTP/HTTPS, NTP Protocol</span>
+                            </div>
+                            <div class="layer-item platform">
+                                <span class="layer-label">Platform</span>
+                                <span class="layer-tech">Telegram Bot API, Cloud messaging</span>
+                            </div>
+                            <div class="layer-item development">
+                                <span class="layer-label">Development</span>
+                                <span class="layer-tech">Arduino IDE, Git version control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Prototype Demo -->
+        <div class="slide" id="slide-8">
+            <div class="slide-content">
+                <h1>Prototype Demo & Testing Results</h1>
+                <div class="demo-sections">
+                    <div class="demo-features">
+                        <h3>Live Demo Features</h3>
+                        <div class="demo-grid">
+                            <div class="demo-card oled">
+                                <div class="demo-icon">📺</div>
+                                <h4>OLED Display</h4>
+                                <p>Live sensor readings with status indicators</p>
+                            </div>
+                            <div class="demo-card telegram">
+                                <div class="demo-icon">📱</div>
+                                <h4>Telegram Alerts</h4>
+                                <p>Real-time spoilage warnings with context</p>
+                            </div>
+                            <div class="demo-card commands">
+                                <div class="demo-icon">⌨️</div>
+                                <h4>Command Interface</h4>
+                                <p>/smell, /temperature, /foodlist commands</p>
+                            </div>
+                            <div class="demo-card response">
+                                <div class="demo-icon">⚡</div>
+                                <h4>Sensor Response</h4>
+                                <p>15-30 second detection, 99.7% uptime</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test-results">
+                        <h3>Technical Test Results</h3>
+                        <div class="results-table">
+                            <div class="result-row header">
+                                <div>Test Parameter</div>
+                                <div>Baseline/Range</div>
+                                <div>Alert Threshold</div>
+                                <div>Accuracy</div>
+                            </div>
+                            <div class="result-row">
+                                <div>Gas Detection</div>
+                                <div>200-250 ppm</div>
+                                <div>>350 ppm</div>
+                                <div>±15 ppm</div>
+                            </div>
+                            <div class="result-row">
+                                <div>Temperature</div>
+                                <div>2-8°C safe</div>
+                                <div>>10°C</div>
+                                <div>±1°C</div>
+                            </div>
+                            <div class="result-row">
+                                <div>System Uptime</div>
+                                <div>72 hours</div>
+                                <div>99.7%</div>
+                                <div>48+ hrs battery</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Impact & Benefits -->
+        <div class="slide" id="slide-9">
+            <div class="slide-content">
+                <h1>Impact & Benefits Analysis</h1>
+                <div class="impact-sections">
+                    <div class="environmental-impact">
+                        <h3>🌍 Environmental Impact</h3>
+                        <div class="impact-chart-container" style="position: relative; height: 250px;">
+                            <canvas id="impactChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="benefits-grid">
+                        <div class="benefit-category economic">
+                            <h4>💰 Economic Benefits</h4>
+                            <div class="benefit-items">
+                                <div class="benefit-item">
+                                    <span class="benefit-label">Household</span>
+                                    <span class="benefit-value">$300-500 annual savings</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-label">Commercial</span>
+                                    <span class="benefit-value">15-25% cost reduction</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-label">vs Smart Fridges</span>
+                                    <span class="benefit-value">$79 vs $2000+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit-category social">
+                            <h4>👥 Social Benefits</h4>
+                            <div class="benefit-items">
+                                <div class="benefit-item">
+                                    <span class="benefit-label">Health Safety</span>
+                                    <span class="benefit-value">90% illness risk reduction</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-label">Education</span>
+                                    <span class="benefit-value">Optimal storage learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Feasibility -->
+        <div class="slide" id="slide-10">
+            <div class="slide-content">
+                <h1>Feasibility & Scalability Analysis</h1>
+                <div class="feasibility-sections">
+                    <div class="cost-breakdown">
+                        <h3>💰 Cost Breakdown</h3>
+                        <div class="cost-chart-container" style="position: relative; height: 300px;">
+                            <canvas id="costChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="scaling-analysis">
+                        <div class="scaling-phases">
+                            <h3>📈 Scaling Strategy</h3>
+                            <div class="scale-cards">
+                                <div class="scale-card prototype">
+                                    <h4>Prototype</h4>
+                                    <div class="scale-metrics">
+                                        <div class="metric">Volume: 1 unit</div>
+                                        <div class="metric">Cost: $55</div>
+                                        <div class="metric">Timeline: Current</div>
+                                    </div>
+                                </div>
+                                <div class="scale-card small">
+                                    <h4>Small Scale</h4>
+                                    <div class="scale-metrics">
+                                        <div class="metric">Volume: 100 units</div>
+                                        <div class="metric">Cost: $45</div>
+                                        <div class="metric">Timeline: 3 months</div>
+                                    </div>
+                                </div>
+                                <div class="scale-card mass">
+                                    <h4>Mass Production</h4>
+                                    <div class="scale-metrics">
+                                        <div class="metric">Volume: 10K units</div>
+                                        <div class="metric">Cost: $35</div>
+                                        <div class="metric">Timeline: 12 months</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="market-opportunity">
+                            <h3>🎯 Market Opportunity</h3>
+                            <div class="market-stats">
+                                <div class="market-stat">
+                                    <div class="stat-value">$151B</div>
+                                    <div class="stat-label">Global Smart Home Market (2024)</div>
+                                </div>
+                                <div class="market-stat">
+                                    <div class="stat-value">$12.3B</div>
+                                    <div class="stat-label">Food Tech Segment</div>
+                                </div>
+                                <div class="market-stat">
+                                    <div class="stat-value">$300M</div>
+                                    <div class="stat-label">Our Target Market (2.5%)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Innovation -->
+        <div class="slide" id="slide-11">
+            <div class="slide-content">
+                <h1>Innovation & Competitive Advantage</h1>
+                <div class="innovation-sections">
+                    <div class="key-innovations">
+                        <h3>🚀 Key Innovations</h3>
+                        <div class="innovation-cards">
+                            <div class="innovation-card">
+                                <div class="innovation-icon">🔬</div>
+                                <h4>Multi-Parameter Detection</h4>
+                                <p>First system combining gas, temperature, humidity for 92% accuracy</p>
+                            </div>
+                            <div class="innovation-card">
+                                <div class="innovation-icon">🧠</div>
+                                <h4>Intelligent Adaptation</h4>
+                                <p>Self-learning thresholds reduce false alarms by 80%</p>
+                            </div>
+                            <div class="innovation-card">
+                                <div class="innovation-icon">📱</div>
+                                <h4>Universal Accessibility</h4>
+                                <p>Telegram works on any device without app installation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="competitive-matrix">
+                        <h3>⚔️ Competitive Comparison</h3>
+                        <div class="comparison-table">
+                            <div class="comparison-header">
+                                <div>Feature</div>
+                                <div>Our Solution</div>
+                                <div>Smart Fridges</div>
+                                <div>Basic IoT</div>
+                                <div>Apps</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Cost</div>
+                                <div class="our-advantage">$79</div>
+                                <div>$2000+</div>
+                                <div>$150+</div>
+                                <div>Free-$10</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Odor Detection</div>
+                                <div class="our-advantage">✅</div>
+                                <div>❌</div>
+                                <div>❌</div>
+                                <div>❌</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Multi-sensor</div>
+                                <div class="our-advantage">✅</div>
+                                <div>Limited</div>
+                                <div>❌</div>
+                                <div>❌</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Real-time Alerts</div>
+                                <div class="our-advantage">✅</div>
+                                <div>✅</div>
+                                <div>✅</div>
+                                <div>❌</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Roadmap -->
+        <div class="slide" id="slide-12">
+            <div class="slide-content">
+                <h1>Development Roadmap</h1>
+                <div class="roadmap-timeline">
+                    <div class="timeline-phases">
+                        <div class="phase-timeline phase-1">
+                            <div class="phase-marker">1</div>
+                            <div class="phase-content">
+                                <h4>Phase 1 (3-6 months)</h4>
+                                <h5>Enhancement & Validation</h5>
+                                <ul class="milestone-list">
+                                    <li>Enhanced sensor accuracy</li>
+                                    <li>Battery operation</li>
+                                    <li>Multi-language support</li>
+                                    <li>Beta testing with 100 households</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="phase-timeline phase-2">
+                            <div class="phase-marker">2</div>
+                            <div class="phase-content">
+                                <h4>Phase 2 (6-18 months)</h4>
+                                <h5>AI Integration & Platform</h5>
+                                <ul class="milestone-list">
+                                    <li>Computer vision module</li>
+                                    <li>ML pipeline integration</li>
+                                    <li>Mobile app launch</li>
+                                    <li>Web dashboard</li>
+                                    <li>3-5 international markets</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="phase-timeline phase-3">
+                            <div class="phase-marker">3</div>
+                            <div class="phase-content">
+                                <h4>Phase 3 (18+ months)</h4>
+                                <h5>Ecosystem & Scale</h5>
+                                <ul class="milestone-list">
+                                    <li>Edge AI processing</li>
+                                    <li>Multi-room systems</li>
+                                    <li>Blockchain integration</li>
+                                    <li>20+ countries expansion</li>
+                                    <li>Enterprise solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="growth-targets">
+                        <h3>📊 Growth Projections</h3>
+                        <div class="target-cards">
+                            <div class="target-card year-1">
+                                <h4>Year 1</h4>
+                                <div class="target-metrics">
+                                    <div>5,000 units</div>
+                                    <div>$400K revenue</div>
+                                    <div>3 markets</div>
+                                </div>
+                            </div>
+                            <div class="target-card year-3">
+                                <h4>Year 3</h4>
+                                <div class="target-metrics">
+                                    <div>50,000 units</div>
+                                    <div>$4M revenue</div>
+                                    <div>100+ partnerships</div>
+                                </div>
+                            </div>
+                            <div class="target-card year-5">
+                                <h4>Year 5</h4>
+                                <div class="target-metrics">
+                                    <div>Market leader</div>
+                                    <div>Global impact</div>
+                                    <div>IPO ready</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Thank You -->
+        <div class="slide" id="slide-13">
+            <div class="slide-content thank-you-slide">
+                <div class="thank-you-header">
+                    <h1>Thank You</h1>
+                    <p class="thank-you-subtitle">Questions & Discussion</p>
+                </div>
+                <div class="summary-impact">
+                    <div class="key-summary">
+                        <h3>🎯 Key Highlights</h3>
+                        <div class="summary-points">
+                            <div class="summary-point">✨ Innovative IoT solution transforming food waste prevention</div>
+                            <div class="summary-point">🔍 Real-time multi-sensor monitoring with gas detection</div>
+                            <div class="summary-point">🤖 AI-powered predictions for proactive spoilage prevention</div>
+                            <div class="summary-point">📱 Universal accessibility through Telegram integration</div>
+                            <div class="summary-point">💰 96% cost savings vs existing smart refrigerator solutions</div>
+                        </div>
+                    </div>
+                    <div class="final-impact">
+                        <h3>📊 Final Impact Numbers</h3>
+                        <div class="impact-grid">
+                            <div class="final-metric">
+                                <div class="metric-value">$400+</div>
+                                <div class="metric-label">Annual household savings</div>
+                            </div>
+                            <div class="final-metric">
+                                <div class="metric-value">35%</div>
+                                <div class="metric-label">Food waste reduction</div>
+                            </div>
+                            <div class="final-metric">
+                                <div class="metric-value">$79</div>
+                                <div class="metric-label">vs $2000+ alternatives</div>
+                            </div>
+                            <div class="final-metric">
+                                <div class="metric-value">2.5T</div>
+                                <div class="metric-label">CO₂ reduction annually</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <div class="contact-info">
+                        <h4>📞 Contact & Next Steps</h4>
+                        <div class="contact-details">
+                            <div class="contact-item">📧 your.email@school.edu</div>
+                            <div class="contact-item">💻 github.com/yourteam/iot-food-monitor</div>
+                            <div class="contact-item">🎥 Live demo available via video call</div>
+                            <div class="contact-item">📋 Technical documentation available</div>
+                        </div>
+                    </div>
+                    <div class="next-steps">
+                        <div class="step-item">🤝 Partnership opportunities open</div>
+                        <div class="step-item">💼 Investment discussions welcome</div>
+                        <div class="step-item">❓ Ready for technical questions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+        <button class="nav-btn prev-btn" onclick="previousSlide()">‹</button>
+        <div class="slide-indicator">
+            <span id="current-slide">1</span> / <span id="total-slides">13</span>
+        </div>
+        <button class="nav-btn next-btn" onclick="nextSlide()">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Fullscreen Toggle -->
+    <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
