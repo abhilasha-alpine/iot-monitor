@@ -50,7 +50,3 @@ An affordable IoT-based system that monitors food freshness using gas sensors, t
 
 ## **Acknowledgments**
 Thanks to the open-source communities, hardware suppliers, and API providers for enabling these innovative projects!
-
----
-
-Feel free to clone, customize, and extend these projects as needed. Good luck with your presentations and implementations!
